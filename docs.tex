@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\title{Latex Documentation}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Class}
+\begin{center}
+    \verb!\documentclass[option1, option2, etc.]{article}!
+\end{center}
+
+\begin{itemize}
+    \item Font size
+    \item Paper size and format:
+    \begin{itemize}
+        \item \verb!a4paper!
+        \item \verb!letterpaper!
+        \item \verb!a5paper!
+        \item \verb!b5paper!
+        \item \verb!executivepaper!
+        \item \verb!legalpaper!
+    \end{itemize}
+    \item Column: \verb!onecolumn, twocolumn!
+    \item Formula-specific options:
+    \begin{itemize}
+        \item \verb!fleqn!: left-alignemnt formulas
+        \item \verb!leqno!: labels formulas on the left-hand side
+    \end{itemize}
+    \item Titlepage
+    \begin{itemize}
+        \item \verb!notitlepage!
+        \item \verb!titlepage!: title for every page
+    \end{itemize}
+    \item Chapter opening
+    \begin{itemize}
+        \item \verb!openany!
+        \item \verb!openright!: the new chapter always starts on the right
+    \end{itemize}
+\end{itemize}
+
+\section{Environments}
+Standard tools used to accomplish typesetting tasks in \LaTeX:\\
+\verb!\begin{%env name}...\end{%env name}!
+
+\section{Sectioning}
+\begin{verbatim}
+    \section{...}
+    \subsection{...}
+    \subsubsection{...}
+\end{verbatim}
+
+\section{Math modes}
+\subsection{In-line }
+    \verb|$...$| or \verb|\(...\)|
+\subsubsection{Adding displaystyle}
+    \verb!$\displaystyle ...$!
+    \begin{itemize}
+        \item Example:\\
+    This is normal size in-line equation: $\gamma=\frac{1}{\sqrt{1-(\frac{v}{c})^{2}}}$. This is the \verb!displaystyle!d in-line equation: $\displaystyle \gamma=\frac{1}{\sqrt{1-(\frac{v}{c})^{2}}}$
+    \end{itemize}
+
+
+\subsection{Display/Centered}
+\begin{center}
+    \verb|$$...$$|
+\end{center}
+\section{Inserting \LaTeX Code}
+    \verb|\verb!...!| or \verb!\verb|...|! \\or
+
+\begin{verbatim}
+    \begin{verbatim}
+        ... multiline code
+    \end{...
+\end{verbatim}
+
+% --- NEW CHAPTER 
+\newpage
+\Large Packages
+\normalsize
+
+\begin{center}
+    \begin{tabular}{c|c}
+    \hline
+        amsmath & desc \\
+        \hline
+        amssymb & desc \\
+        \hline
+        amsthm & desc \\
+
+    \end{tabular}
+\end{center}
+
+\end{document}
